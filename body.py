@@ -22,7 +22,7 @@ class Body:
         self.radius=bodyRadius
         self.weight=bodyWeight
         self.circ=pygame.Rect(self.x,self.y,self.radius,self.radius)
-        self.gConstant=40
+        self.gConstant=15
 
     def setPosition(self,x,y):
         self.x=x

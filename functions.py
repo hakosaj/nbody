@@ -16,3 +16,10 @@ def allGravities(bodies):
             if body2!=body:
                 body.applyRealGravity(body2)
 
+def centreOfMass(bodies):
+    totalMass = sum(list(map(lambda x:x.weight,bodies)))
+    xm = sum(list(map(lambda n:n.weight*n.x,bodies)))/totalMass
+    ym = sum(list(map(lambda n:n.weight*n.y,bodies)))/totalMass
+    print(f"center: {xm},{ym}")
+    return xm,ym
+
